@@ -25,3 +25,10 @@ if(data){
     LIST = [];
     id = 0;
 }
+
+// Lade die items ins User Interface
+function loadList(array){
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
