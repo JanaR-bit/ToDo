@@ -64,3 +64,29 @@ function addToDo(toDo, id, done, trash){
     
     list.insertAdjacentHTML(position, item);
 }
+
+
+// Füge ein item der Liste hinzu (user the enter key)
+document.addEventListener("keyup",function(even){
+    if(event.keyCode == 13){
+        const toDo = input.value;
+        
+        // if the input isn't empty
+        if(toDo){
+            addToDo(toDo, id, false, false);
+            
+            LIST.push({
+                name : toDo,
+                id : id,
+                done : false,
+                trash : false
+            });
+            
+            // add item to localstorage ( this code must be added where the LIST array is updated)
+            localStorage.setItem("TODO", JSON.stringify(LIST));
+            
+            id++;
+        }
+        input.value = "";
+    }
+});
