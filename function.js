@@ -1,4 +1,4 @@
-// Create a "close" button and append it to each list item
+//erstelle einen Close button und füge ihn zu jedem listenitem hinzu
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -9,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+//Klicke auf ein close button um das aktuelle Listenitem zu verbergen
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -19,7 +19,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Fügt ein checked symbol hinzu, wenn auf ein Eintrag geklickt wird
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -27,7 +27,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Erstellt ein neuen Listeneintrag wenn auf den Add button geklickt wird
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
