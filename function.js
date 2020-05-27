@@ -90,3 +90,20 @@ document.addEventListener("keyup",function(even){
         input.value = "";
     }
 });
+
+
+// complete to do
+function completeToDo(element){
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+    
+    LIST[element.id].done = LIST[element.id].done ? false : true;
+}
+
+// entferne to do
+function removeToDo(element){
+    element.parentNode.parentNode.removeChild(element.parentNode);
+    
+    LIST[element.id].trash = true;
+}
