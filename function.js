@@ -8,3 +8,9 @@ const input = document.getElementById("input");
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
+
+// Variables
+let LIST, id;
+
+// get item from localstorage
+let data = localStorage.getItem("TODO");
