@@ -28,12 +28,17 @@
       </ul> 
   </div>
 
-  <form name="form">
-    <input type="text" name="rfeld" size="5" value="100">
-    <input type="text" name="gfeld" size="5" value="100">
-    <input type="text" name="bfeld" size="5" value="50">
-    <input id="RgbButton" type="button" value="RGB eingeben" onclick="rgbfarben()">
-  </form>
+  <input type="color" id="colorInputColor">
+
+  <input type="button" id="colorButton" value="Farbe ändern"
+  onclick="changeColor()">
+  <br>
+
+  <p>Hintergrundfarbe ändern</p>
+  <input type="color" id="colorBGInputColor">
+  
+  <input type="button" id="colorBGButton" value="Farbe ändern"
+  onclick="changeBGColor()">
 
   
   </body> 

@@ -58,10 +58,18 @@ function newElement() {
   }
 } 
 
-//Ermöglicht es, die Hintergrundfarbe zu bestimmen
-function rgbfarben() {
-  var rot= document.form.rfeld.value;
-  var gruen = document.form.gfeld.value;
-  var blau = document.form.bfeld.value;
-  document.getElementsByTagName("body")[0].style.backgroundColor = "rgb("+ rot +"%,"+ gruen +"%, " +blau+"%)";
-  }
+  function changeColor() {
+
+    let color = document.getElementById('colorInputColor').value;
+
+    document.body.style.color = color;
+
+}
+
+function changeBGColor() {
+
+    let color = document.getElementById('colorBGInputColor').value;
+
+    document.body.style.backgroundColor = color;
+
+}
