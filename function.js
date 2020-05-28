@@ -20,12 +20,16 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Fügt ein checked symbol hinzu, wenn auf ein Eintrag geklickt wird
+// Ermöglicht, dass ein Element beim Anklicken als "Erledigt" angezeigt wird
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
+list.addEventListener('click', function(ev) 
+{
+  if (ev.target.tagName === 'LI') 
+  {
     ev.target.classList.toggle('checked');
   }
 }, false);
+
 
 // Erstellt ein neuen Listeneintrag wenn auf den Add button geklickt wird
 function newElement() {
