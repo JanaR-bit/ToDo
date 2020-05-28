@@ -1,8 +1,4 @@
 
-  {
-    box-sizing: border-box;
-  }
-  
   body {
     position: absolute;
     width: 400px;
@@ -14,6 +10,7 @@
 
 #mainpart{
   background-color: #B0E0E6;
+  
 }
   ul {
     margin: 0;
@@ -87,7 +84,8 @@
     padding: 30px 40px;
     color: white;
     text-align: center;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   
  
