@@ -22,7 +22,7 @@ for (i = 0; i < close.length; i++) {
 // Fügt ein checked symbol hinzu, wenn auf ein Eintrag geklickt wird
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
+  if (ev.target.tagName === 'li') {
     ev.target.classList.toggle('checked');
   }
 }, false);
