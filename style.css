@@ -21,8 +21,23 @@
     width: 230px;
   }
 
-  #RgbButton{
-    width: 220px;
+  #colorButton{
+    width: 150px;
+    
+  }
+
+  #colorBGButton{
+    width: 190px;
+  }
+
+  #colorInputColor{
+    height: 18px;
+    width: 10px;
+  }
+  
+  #colorBGInputColor{
+    height: 18px;
+    width: 10px;
   }
    
   ul li {
