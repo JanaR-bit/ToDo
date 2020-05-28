@@ -1,0 +1,1 @@
+Das Programm ermöglicht es einzelne Punkte abzuhaken und farblich zu kennzeichnen.

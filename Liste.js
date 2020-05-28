@@ -6,3 +6,13 @@ list.addEventListener('click', function(ev)
     ev.target.classList.toggle('checked');
   }
 }, false);
+
+//Ermöglicht es, die Hintergrundfarbe zu bestimmen
+function rgbfarben() {
+  var rot= document.form.rfeld.value;
+  var gruen = document.form.gfeld.value;
+  var blau = document.form.bfeld.value;
+  document.getElementsByTagName("body")[0].style.backgroundColor = "rgb("+ rot +"%,"+ gruen +"%, " +blau+"%)";
+  }
+
+  
