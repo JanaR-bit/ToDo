@@ -5,13 +5,16 @@
   
   body {
     position: absolute;
-    width: 300px;
+    width: 400px;
     height: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
+#mainpart{
+  background-color: #B0E0E6;
+}
   ul {
     margin: 0;
     padding: 0;
@@ -36,7 +39,7 @@
   
  
   ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #B0E0E6;
   }
   
 
@@ -80,10 +83,11 @@
   
   
   .header {
-    background-color: #f44336;
+    background-color: #87CEFA 	;
     padding: 30px 40px;
     color: white;
     text-align: center;
+    border-radius: 20px;
   }
   
  
@@ -98,7 +102,7 @@
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 230px;
     padding: 10px;
     float: left;
     font-size: 16px;
@@ -107,7 +111,7 @@
   
   .addBtn {
     padding: 10px;
-    width: 25%;
+    width: 40px;
     background: #d9d9d9;
     color: #555;
     float: left;
@@ -116,6 +120,7 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    border-radius: 10px;
   }
   
   .addBtn:hover {
